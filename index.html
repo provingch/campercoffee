@@ -13,10 +13,10 @@
 <body>
     <header>
         <div class="menu container">
-            <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\Imagen de WhatsApp 2024-09-01 a las 10.28.23_4551d613.jpg" class="logo-1" alt="">
+            <img src="Clogo1.jpg" class="logo-1" alt="">
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\menu.png" class="menu-icono" alt="">
+                <img src="menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
                 <div class="menu-1">
@@ -35,16 +35,23 @@
                     <div class="socials">
                         <a href="https://www.facebook.com/profile.php?id=61565491612772" target="_blank">
                             <div class="social">
-                                <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s1.svg" alt="">
+                                <img src="s1.svg" alt="">
                             </div>
                         </a>
                         <div class="socials">
                             <a href="https://x.com/campcoffee1987" target="_blank">
                                 <div class="social">
-                                    <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s2.svg" alt="">
+                                    <img src="s2.svg" alt="">
                                 </div>
                             </a>
                         </div>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/campercoffee1987/" target="_blank">
+                            <div class="social">
+                                <img src="s3.svg" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -63,7 +70,7 @@
                                     experiencia única, ideal para cualquier momento del día.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#menudecompras" class="btn-1" id="btn-comprar">Comprar</a>
                                     <a href="#" class="btn-1">Menú</a>
                                 </div>
                             </div>
@@ -83,7 +90,7 @@
                                     momento de indulgencia
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#menudecompras" class="btn-1" id="btn-comprar">Comprar</a>
                                     <a href="#" class="btn-1">Menú</a>
                                 </div>
                             </div>
@@ -102,7 +109,7 @@
                                     cualquier momento del día.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#menudecompras" class="btn-1" id="btn-comprar">Comprar</a>
                                     <a href="#" class="btn-1">Menú</a>
                                 </div>
                             </div>
@@ -119,6 +126,47 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <div class="container" id="menudecompras">
+            <div class="menu-compra">
+                <h2>Menú de Compra</h2>
+                <form id="formCompra">
+                    <label for="producto">Selecciona un producto:</label>
+                    <select id="producto">
+                        <option value="Café">Café</option>
+                        <option value="Capuccino">Capuccino</option>
+                        <option value="Café Americano">Café Americano</option>
+                        <option value="Chocolatada de Maizena">Chocolatada de Maizena</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="Expresso Panna">Expresso Panna</option>
+                        <option value="Submarino">Submarino</option>
+                        <option value="Café Hawaiano">Café Hawaiano</option>
+                        <option value="Tarta de Manzana">Tarta de Manzana</option>
+                        <option value="Brownie">Brownie</option>
+                        <option value="Muffin">Muffin</option>
+                        <option value="Cookies">Cookies</option>
+                        <option value="Panqueques">Panqueques</option>
+                        <option value="Tiramisú">Tiramisú</option>
+                        <option value="Tarta de queso">Tarta de queso</option>
+                        <option value="Mixto">Mixto</option>
+                        <option value="Mbeju">Mbeju</option>
+                        <option value="Huevos Revueltos">Huevos Revueltos</option>
+                        <option value="Chipa">Chipa</option>
+                        <option value="Quesadilla">Quesadilla</option>
+                        <option value="Arepas">Arepas</option>
+                        <option value="Prezzel">Prezzel</option>
+                    </select>
+    
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" min="1" value="1">
+    
+                    <button type="submit">Confirmar Compra</button>
+                    <button type="button" id="cerrarBtn">Cerrar</button>
+                </form>
+                <p>¡Prepárate para la mejor experiencia de tu vida con nosotros!</p>
+            </div>
+        </div>
+        <script src="Comprar.js"></script>
     </header>
 
     <main class="products">
@@ -139,7 +187,7 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Chocolatada de maizena</h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">2.99$</span>
                                 </div>
                             </div>
@@ -155,7 +203,7 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Espresso</h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">1.50$$</span>
                                 </div>
                             </div>
@@ -166,14 +214,77 @@
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
-                                    <img src="https://i.pinimg.com/564x/24/e0/e7/24e0e755ac748aa61d6a9d2c940c96cb.jpg"
-                                        alt="">
+                                    <img src="https://i.pinimg.com/564x/24/e0/e7/24e0e755ac748aa61d6a9d2c940c96cb.jpg" alt="">
 
                                 </div>
                                 <div class="product-txt">
                                     <h4>Café americano</h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">1.00$$</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/c1/20/be/c120be771265f252655aed19f8796fd6.jpg" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Expresso Panna</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">3.50$$</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/92/79/cc/9279cc3683731df7d412c2957181e517.jpg" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Submarino</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">6.00$$</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/27/98/65/2798657e54fab0a280871aa628340bb9.jpg" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Café Hawaiano</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">4.00$$</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/33/44/2e/33442e58a74503c7cef4fc437a4ebc8e.jpg" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Capuccino</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">2.00$$</span>
                                 </div>
                             </div>
 
@@ -200,7 +311,7 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Tarta de manzana </h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">5.00$</span>
                                 </div>
                             </div>
@@ -216,7 +327,7 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Brownie</h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">4.45$$</span>
                                 </div>
                             </div>
@@ -233,8 +344,76 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Muffin</h4>
-                                    <p>Calidad premiun</p>
+                                    <p>Calidad premium</p>
                                     <span class="price">2.00$$ c/u</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/a2/54/ab/a254ab3176f62d952a39db1c7a2a6a2b.jpg"
+                                        alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Cookies</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">1.00$$ c/u</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/8d/28/ed/8d28ed67751881eb4ac061eedb0ab895.jpg"
+                                        alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Panqueques</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">3.00$$</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/fc/c6/0a/fcc60a8d5942e8da4bb917f8767aca04.jpg"
+                                        alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Torta de tiramisú</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">6.00$$ c/u</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/be/d2/8c/bed28cdd4b6c04426b0b33f26f58f25c.jpg"
+                                        alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Tarta de queso</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">7.00$$ c/u</span>
                                 </div>
                             </div>
 
@@ -260,7 +439,7 @@
 
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto mixto</h4>
+                                    <h4>Mixto</h4>
                                     <p>Calidad premiun</p>
                                     <span class="price">3.99$</span>
                                 </div>
@@ -276,8 +455,8 @@
 
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto mbeju</h4>
-                                    <p>Calidad premiun</p>
+                                    <h4>Mbeju</h4>
+                                    <p>Calidad premium</p>
                                     <span class="price">2.50$$</span>
                                 </div>
                             </div>
@@ -291,12 +470,71 @@
                                         alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Producto Huevos revueltos</h4>
-                                    <p>Calidad premiun</p>
+                                    <h4> Huevos revueltos</h4>
+                                    <p>Calidad premium</p>
                                     <span class="price">8.00$$</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/a0/99/75/a09975ae5e5d66b329b223a166408032.jpg"
+                                        alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Chipa</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">1.00$$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/b1/10/a2/b110a206b116ec0ac97d456ae6048231.jpg"
+                                        alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Quesadillas</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">0.50$$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/8a/e3/fd/8ae3fd68874f0504fa1e68b535b23d9c.jpg"
+                                        alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Arepas</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">1.50$$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="https://i.pinimg.com/236x/60/33/44/603344d49b150fcbfdaa7df7315b8dac.jpg"
+                                        alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Prezzel</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">.50$$</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -308,19 +546,18 @@
     <section class="info container">
         <a name="Nos"></a>
         <div class="info-img">
-            <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\Imagen de WhatsApp 2024-08-09 a las 21.19.17_0304ca47.jpg"
-                alt="">
+            <img src="Clogo2.jpg"    alt="">
         </div>
         <div class="info-txt">
             <h2>Información</h2>
             <p>
                 "Camper Coffee" es una cafetería acogedora que ha sido un punto de encuentro para amantes del buen
-                café desde 1987. Ubicada en el corazón del centro comercial Paseo La Galería, en Asunción, ofrece una
+                café desde <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">1987</a>. Ubicada en el corazón del centro comercial Paseo La Galería, en Asunción, ofrece una
                 combinación perfecta de tradición y modernidad. Con una atmósfera cálida y una decoración que mezcla lo
                 rústico con lo contemporáneo, es el lugar ideal para disfrutar de una taza de café recién hecho,
                 acompañado de deliciosos pasteles y bocadillos.
             </p>
-            <a href="#" class="btn-2">Más información</a>
+            <a href="masinfo.html" class="btn-2">Más información</a>
         </div>
     </section>
 
@@ -352,13 +589,20 @@
                     <div class="socials">
                         <a href="https://www.facebook.com/profile.php?id=61565491612772" target="_blank">
                             <div class="social">
-                                <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s1.svg" alt="">
+                                <img src="s1.svg" alt="">
                             </div>
                         </a>
                         <div class="socials">
                             <a href="https://x.com/campcoffee1987" target="_blank">
                                 <div class="social">
-                                    <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s2.svg" alt="">
+                                    <img src="s2.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.instagram.com/campercoffee1987/" target="_blank">
+                                <div class="social">
+                                    <img src="s3.svg" alt="">
                                 </div>
                             </a>
                         </div>
@@ -386,13 +630,20 @@
             <div class="socials">
                 <a href="https://www.facebook.com/profile.php?id=61565491612772" target="_blank">
                     <div class="social">
-                        <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s1.svg" alt="">
+                        <img src="s1.svg" alt="">
                     </div>
                 </a>
                 <div class="socials">
                     <a href="https://x.com/campcoffee1987" target="_blank">
                         <div class="social">
-                            <img src="c:\Users\Luis\Downloads\Proyectos html\Expotecnia\s2.svg" alt="">
+                            <img src="s2.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.instagram.com/campercoffee1987/" target="_blank">
+                        <div class="social">
+                            <img src="s3.svg" alt="">
                         </div>
                     </a>
                 </div>
@@ -403,5 +654,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

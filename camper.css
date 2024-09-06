@@ -13,6 +13,71 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a:visited{
+    color: #FFFF;
+}
+a:hover{
+    color: #FFFF;
+}
+a{
+    color: #FFFF;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;}
+
+.menu-compra {
+    border: 1px solid  rgb(165, 25, 25);
+    background-color: #0d0d0d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165, 25, 25);
+    color: #FFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .menu-compra {
+        padding: 15px;
+    }
+
+    select, input[type="number"], button {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-compra {
+        width: 90%; 
+    }
+
+    select, input[type="number"], button {
+        padding: 12px; 
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px; 
+    }
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
