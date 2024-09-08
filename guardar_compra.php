@@ -1,5 +1,4 @@
 <?php
-// Obtener los datos JSON enviados desde el cliente
 $data = json_decode(file_get_contents('php://input'), true);
 
 // Verificar que los datos se recibieron correctamente
